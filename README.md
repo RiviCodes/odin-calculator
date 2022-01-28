@@ -1,6 +1,6 @@
 # Odin Calculator
 
-[Live on GitHub Pages](https://rivicodes.github.io/etch-a-sketch/)
+[Live on GitHub Pages](https://rivicodes.github.io/odin-calculator/)
 
 _This is The Odin Project's final assignment/project. The goal is to create from zero a calculator capable of computing the basic operations a calculator could do._
 
