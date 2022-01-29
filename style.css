@@ -1,3 +1,11 @@
+/* Imported fonts */
+
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Dongle */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   font-weight: normal;
@@ -9,25 +17,57 @@ body {
   background: linear-gradient(to right, #f21b3f, #c04cfd);
 }
 
+header {
+  padding: 18px;
+  font-size: 26px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  background-color: #202a47;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: #7692ff;
+}
+
+.footer-text1 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.footer-heart {
+  font-size: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 2px;
+}
+
+.footer-text2 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 32px;
+  padding-left: 6px;
+  color: rgb(207, 173, 119);
+}
+
+.top-icon {
+  height: 32px;
+  width: auto;
+  margin-left: 12px;
+  border-radius: 50%;
+}
+
 .calculator-grid {
   display: grid;
   align-content: center;
   justify-content: center;
-  min-height: 100vh;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-}
-
-.calculator-grid > button {
-  font-size: 2rem;
-  border: 1px solid white;
-  outline: none;
-  background-color: rgba(255, 255, 255, .75);
-  transition: 0.3s;
-}
-
-.calculator-grid > button:hover {
-  background-color: rgba(255, 255, 255, .90);
+  min-height: 90vh; /* 100vh */
+  grid-template-columns: repeat(4, 80px); /* 100px */
+  grid-template-rows: minmax(100px, auto) repeat(5, 80px); /* 120px - 100px */
 }
 
 .span-two {
@@ -41,5 +81,39 @@ body {
   justify-content: space-around;
   padding: 10px;
   grid-column: 1 / -1;
+  word-wrap: break-word;
+  word-break: break-all;
   background-color: rgba(0, 0, 0, .60);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 25px;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 25px;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.calculator-grid > button {
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+  transition: 0.3s;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .90);
 }
