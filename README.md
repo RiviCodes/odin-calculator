@@ -2,9 +2,9 @@
 
 [Live on GitHub Pages](https://rivicodes.github.io/odin-calculator/)
 
-_This is The Odin Project's final assignment/project. The goal is to create from zero a calculator capable of computing the basic operations a calculator could do._
+_This is The Odin Project's final assignment/project. The goal is to create from zero a calculator capable of computing the basic operations a calculator would do._
 
-_(In progress...)_
+_There are extra basic functions like clearing the user's inputs or the results after computing an operation, deleting single digits in the output, and the basic operations with operands._
 
 ### Pre-requirements 📋
 
