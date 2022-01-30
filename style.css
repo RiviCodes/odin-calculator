@@ -6,18 +6,24 @@
 /* Dongle */
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
+/* Play */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
+  font-family: 'Play', sans-serif;
   font-weight: normal;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f21b3f, #c04cfd);
 }
 
 header {
+  display: flex;
   padding: 18px;
   font-size: 26px;
   font-family: 'Bebas Neue', cursive;
@@ -25,49 +31,14 @@ header {
   background-color: #202a47;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background-color: #7692ff;
-}
-
-.footer-text1 {
-  font-family: 'Dongle', sans-serif;
-  font-size: 30px;
-  color: white;
-}
-
-.footer-heart {
-  font-size: 20px;
-  padding-left: 6px;
-  padding-right: 6px;
-  margin-bottom: 2px;
-}
-
-.footer-text2 {
-  font-family: 'Dongle', sans-serif;
-  font-size: 32px;
-  padding-left: 6px;
-  color: rgb(207, 173, 119);
-}
-
-.top-icon {
-  height: 32px;
-  width: auto;
-  margin-left: 12px;
-  border-radius: 50%;
-}
-
 .calculator-grid {
   display: grid;
   align-content: center;
   justify-content: center;
   min-height: 90vh; /* 100vh */
-  grid-template-columns: repeat(4, 80px); /* 100px */
-  grid-template-rows: minmax(100px, auto) repeat(5, 80px); /* 120px - 100px */
+  grid-template-columns: repeat(4, 70px); /* 100px */
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px); /* 120px - 100px */
+  background: #f21b3f;
 }
 
 .span-two {
@@ -116,4 +87,40 @@ footer {
 
 .calculator-grid > button:hover {
   background-color: rgba(255, 255, 255, .90);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: #7692ff;
+}
+
+.footer-text1 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.footer-heart {
+  font-size: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 2px;
+}
+
+.footer-text2 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 32px;
+  padding-left: 6px;
+  color: rgb(207, 173, 119);
+}
+
+.top-icon {
+  height: 32px;
+  width: auto;
+  margin-left: 12px;
+  border-radius: 50%;
 }
