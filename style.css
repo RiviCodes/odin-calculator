@@ -22,8 +22,7 @@ body {
   padding: 0;
 }
 
-header {
-  display: flex;
+.header {
   padding: 18px;
   font-size: 26px;
   font-family: 'Bebas Neue', cursive;
@@ -35,9 +34,9 @@ header {
   display: grid;
   align-content: center;
   justify-content: center;
-  min-height: 90vh; /* 100vh */
-  grid-template-columns: repeat(4, 70px); /* 100px */
-  grid-template-rows: minmax(100px, auto) repeat(5, 70px); /* 120px - 100px */
+  min-height: 90vh;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
   background: #f21b3f;
 }
 
